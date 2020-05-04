@@ -522,7 +522,7 @@ console.log(studentKeys); // finish this.
 */
 
 const studentValues = Object.values(student);
-console.log(studentValues[3]); // finish this.
+console.log(studentValues); // finish this.
 
 /* 
   Problem 3: Giver Info
@@ -533,7 +533,17 @@ console.log(studentValues[3]); // finish this.
   next: select that list and iterate over it using `.forEach` simply log the name of each char in the list;
 */
 
-const listOfChars = student.characters; // finish this.
+// to solve it break it down to the most BASIC things and just go step by step
+const listOfChars = student.characters;
+
+// we know they want an array
+// we know that it will go into the student object
+//sooooo...
+//
+// think... simply how do you add content to an object? 
+student.characters = ['Lily', 'Mother', 'Father', 'Caleb', 'Asher'];
+console.log(student);
+
 
 
 
